@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BdMall - Online Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Loader -->
+<div id="loader">
+    <div class="loader-content">
+        <div class="spinner"></div>
+        <h2 class="loader-logo">BdMall<span>.</span></h2>
+    </div>
+</div>
+
+    <div class="header-container">
+        <!-- Announcement Bar -->
+        <div class="announcement-bar-header">
+            <i class="fas fa-shipping-fast"></i>Free worldwide shipping over $200.
+        </div>
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <a href="index.html" class="logo">Bd<span>Mall.</span></a>
+
+            <div class="search-container">
+                <input type="text" placeholder="Search For Products...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <div class="header-actions">
+                <div class="language-currency">
+                    <i class="fas fa-globe"></i>
+                    <select>
+                        <option>English</option>
+                        <option>Español</option>
+                        <option>Français</option>
+                    </select>
+                    <span style="margin: 0 5px">|</span>
+                    <select>
+                        <option>India (₹)</option>
+                        <option>USA ($)</option>
+                        <option>EUR (€)</option>
+                    </select>
+                </div>
+
+                <div class="user-account">
+                    <i class="far fa-user"></i>
+                    <span>Hello, sign in<br>Account & List</span>
+                </div>
+
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div>
+                        <div class="cart-amount">Rs. 0.00</div>
+                        <div style="font-size: 11px;">Cart</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Mobile Second Row -->
+            <div class="mobile-second-row">
+                <div class="mobile-categories-btn">
+                    <i class="fas fa-bars"></i> Categories
+                </div>
+
+                <div class="mobile-language-currency">
+                    <i class="fas fa-globe"></i>
+                    <select>
+                        <option>EN</option>
+                        <option>ES</option>
+                        <option>FR</option>
+                    </select>
+                    <span style="margin: 0 5px">|</span>
+                    <select>
+                        <option>₹</option>
+                        <option>$</option>
+                        <option>€</option>
+                    </select>
+                </div>
+
+                <div class="mobile-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-amount">Rs. 0.00</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="main-navigation">
+            <ul class="categories">
+                <li><a href="#"><i class="fas fa-bars"></i> All Categories</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="features">
+                <li><i class="fas fa-star"></i> Features</li>
+                <li><i class="fas fa-info-circle"></i> About Us</li>
+                <li><i class="far fa-question-circle"></i> FAQs</li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Announcement Marquee Bar -->
+    <div class="announcement-bar-hero">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <i class="fas fa-bolt marquee-icon"></i>
+                Electronics Extravaganza: Unmissable Deals! • Electronics Extravaganza: Unmissable Deals! • Electronics
+                Extravaganza: Unmissable Deals! • Electronics Extravaganza: Unmissable Deals!
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>ELECTRONICS</h1>
+            <p>Mega Music Sale <br> 02–06 Sep</p>
+            <a href="#" class="hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- shop by category -->
+    <section class="categories-section">
+        <div class="categories-header">
+            <h2>Shop by categories</h2>
+            <a href="#">See all categories</a>
+        </div>
+
+        <div class="categories-grid">
+            <div class="category-box">
+                <img src="images/headphone.png" alt="Audio">
+                <p>Audio</p>
+            </div>
+
+            <div class="category-box">
+                <img src="images/tablet.png" alt="Tablets">
+                <p>Tablets</p>
+            </div>
+
+            <div class="category-box">
+                <img src="images/gaming.png" alt="Gaming">
+                <p>Gaming</p>
+            </div>
+
+            <div class="category-box">
+                <img src="images/frige.png" alt="Fridge">
+                <p>Fridge</p>
+            </div>
+
+            <div class="category-box">
+                <img src="images/laptop.png" alt="Laptops">
+                <p>Laptops</p>
+            </div>
+
+            <div class="category-box">
+                <img src="images/toaster.png" alt="Toaster">
+                <p>Toaster</p>
+            </div>
+
+            <div class="category-box">
+                <img src="images/charger.png" alt="Charger">
+                <p>Charger</p>
+            </div>
+
+            <div class="category-box">
+                <img src="images/tv.png" alt="Television">
+                <p>Television</p>
+            </div>
+        </div>
+    </section>
+    <!-- product section -->
+    <section class="products-section">
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="products-grid">
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge hot">HOT</span>
+                <span class="badge new">NEW</span>
+
+                <div class="product-img">
+                    <img src="images/laptop-p.png" alt="MacBook">
+                </div>
+
+                <h3 class="product-title">Apple MacBook Pro 16” M1 Pro</h3>
+                <p class="product-category">Apple MacBook</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">$2,499.00</div>
+
+                <button class="btn-primary">Select Options</button>
+                <p class="sku">SKU: 30876</p>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge discount">-10%</span>
+
+                <div class="product-img">
+                    <img src="images/iphone.png" alt="Oculus">
+                </div>
+
+                <h3 class="product-title">i-Phone 16 pro max</h3>
+                <p class="product-category">Brand new i phone</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">
+                    <span class="old-price">$499.00</span> $449.00
+                </div>
+
+                <button class="btn-primary">Add to Cart</button>
+                <p class="sku">SKU: 50869</p>
+            </div>
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge discount">-10%</span>
+
+                <div class="product-img">
+                    <img src="images/headphone.jpg" alt="Oculus">
+                </div>
+
+                <h3 class="product-title">Value-Top Headphone vr-1</h3>
+                <p class="product-category">VR Headset</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">
+                    <span class="old-price">$499.00</span> $449.00
+                </div>
+
+                <button class="btn-primary">Add to Cart</button>
+                <p class="sku">SKU: 50869</p>
+            </div>
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge hot">HOT</span>
+                <span class="badge new">NEW</span>
+
+                <div class="product-img">
+                    <img src="images/watch.jpg" alt="Oculus">
+                </div>
+
+                <h3 class="product-title">Mi smart watch m32</h3>
+                <p class="product-category">Ai smart watch</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">
+                    <span class="old-price">$499.00</span> $449.00
+                </div>
+
+                <button class="btn-primary">Add to Cart</button>
+                <p class="sku">SKU: 50869</p>
+            </div>
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge discount">-10%</span>
+
+                <div class="product-img">
+                    <img src="images/camera.jpg" alt="Oculus">
+                </div>
+
+                <h3 class="product-title">Canon 750D Dslr</h3>
+                <p class="product-category">Touch screen display</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">
+                    <span class="old-price">$499.00</span> $449.00
+                </div>
+
+                <button class="btn-primary">Add to Cart</button>
+                <p class="sku">SKU: 50869</p>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge hot">HOT</span>
+                <span class="badge new">NEW</span>
+
+                <div class="product-img">
+                    <img src="images/laptop-p.png" alt="MacBook">
+                </div>
+
+                <h3 class="product-title">Apple MacBook Pro 16” M1 Pro</h3>
+                <p class="product-category">Apple MacBook</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">$2,499.00</div>
+
+                <button class="btn-primary">Select Options</button>
+                <p class="sku">SKU: 30876</p>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge discount">-10%</span>
+
+                <div class="product-img">
+                    <img src="images/iphone.png" alt="Oculus">
+                </div>
+
+                <h3 class="product-title">i-Phone 16 pro max</h3>
+                <p class="product-category">Brand new i phone</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">
+                    <span class="old-price">$499.00</span> $449.00
+                </div>
+
+                <button class="btn-primary">Add to Cart</button>
+                <p class="sku">SKU: 50869</p>
+            </div>
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge discount">-10%</span>
+
+                <div class="product-img">
+                    <img src="images/headphone.jpg" alt="Oculus">
+                </div>
+
+                <h3 class="product-title">Value-Top Headphone vr-1</h3>
+                <p class="product-category">VR Headset</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">
+                    <span class="old-price">$499.00</span> $449.00
+                </div>
+
+                <button class="btn-primary">Add to Cart</button>
+                <p class="sku">SKU: 50869</p>
+            </div>
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge hot">HOT</span>
+                <span class="badge new">NEW</span>
+
+                <div class="product-img">
+                    <img src="images/watch.jpg" alt="Oculus">
+                </div>
+
+                <h3 class="product-title">Mi smart watch m32</h3>
+                <p class="product-category">Ai smart watch</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">
+                    <span class="old-price">$499.00</span> $449.00
+                </div>
+
+                <button class="btn-primary">Add to Cart</button>
+                <p class="sku">SKU: 50869</p>
+            </div>
+            <!-- Product Card -->
+            <div class="product-card">
+                <span class="badge discount">-10%</span>
+
+                <div class="product-img">
+                    <img src="images/camera.jpg" alt="Oculus">
+                </div>
+
+                <h3 class="product-title">Canon 750D Dslr</h3>
+                <p class="product-category">Touch screen display</p>
+
+                <div class="rating">★★★★★</div>
+                <p class="stock">✔ In stock</p>
+
+                <div class="price">
+                    <span class="old-price">$499.00</span> $449.00
+                </div>
+
+                <button class="btn-primary">Add to Cart</button>
+                <p class="sku">SKU: 50869</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Offer section -->
+    <section class="offer-section">
+        <div class="offer-grid">
+
+            <!-- Big Offer -->
+            <div class="offer-card big-offer" style="background-image:url('images/offer1.jpg')">
+                <div class="offer-content">
+                    <span class="tag">NEW ARRIVALS</span>
+                    <h2>Apple<br><span>Top AirPods Pro</span></h2>
+                    <p>Limited Time Online Only!</p>
+                    <a href="#" class="offer-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Right Offers -->
+            <div class="side-offers">
+
+                <div class="offer-card small-offer" style="background-image:url('images/offer2.jpg')">
+                    <div class="offer-content">
+                        <span class="tag">Top Offer</span>
+                        <h3>iPad Pro 128GB</h3>
+                        <p>Discount 20% On Product</p>
+                    </div>
+                </div>
+
+                <div class="offer-card small-offer" style="background-image:url('images/offer3.jpg')">
+                    <div class="offer-content">
+                        <span class="tag">Gamepad</span>
+                        <h3>Sport Edition XPS</h3>
+                        <p>Best Choice Of The Year</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Deal of the day section -->
+     <section class="deal-section">
+    <div class="deal-container">
+
+        <!-- Product Image -->
+        <div class="deal-image">
+            <img src="images/laptop-p.png" alt="Product">
+        </div>
+
+        <!-- Deal Content -->
+        <div class="deal-content">
+            <h3>🔥 Deal Of The Day : Ends In</h3>
+
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Mins</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Sec</small>
+                </div>
+            </div>
+        </div>
+<!-- Offer Price -->
+<div class="deal-price">
+    <span class="old-price">Privious Price: $999</span>
+    <span class="new-price">New Price: $599</span>
+</div>
+        <!-- CTA -->
+        <div class="deal-btn">
+            <a href="#">Claim This Offer Now</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ads section -->
+ <section class="promo-section">
+    <div class="promo-content">
+        <h3>
+            APPLY CARD TODAY AND <span>GET DISCOUNT</span>
+        </h3>
+        <p>
+            In rewards on your first day of purchase when you are approved for this card.
+        </p>
+    </div>
+</section>
+<!-- service section -->
+ <section class="service-section">
+    <div class="service-container">
+
+        <div class="service-box">
+            <div class="icon">🔥</div>
+            <h4>Daily deals</h4>
+            <p>Items you love at prices that fit your budget</p>
+        </div>
+
+        <div class="service-box">
+            <div class="icon">📦</div>
+            <h4>08-Days return policy</h4>
+            <p>Merchandise must be returned within 60 days.</p>
+        </div>
+
+        <div class="service-box">
+            <div class="icon">🔒</div>
+            <h4>Secure payment method</h4>
+            <p>Pay with popular and secure payment methods</p>
+        </div>
+
+        <div class="service-box">
+            <div class="icon">💬</div>
+            <h4>Help center 24/7</h4>
+            <p>Want to talk to a person? choose chat or call us</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Back To Top Button -->
+<button id="backToTop">
+    ↑
+</button>
+<!-- footer section -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+        <div class="footer-col">
+            <h2 class="footer-logo">BdMall<span>.</span></h2>
+            <p>Your trusted online electronics store. 
+               Discover the latest gadgets at unbeatable prices.</p>
+
+            <div class="social-icons">
+                <a href="#">🌐</a>
+                <a href="#">📘</a>
+                <a href="#">📸</a>
+                <a href="#">🐦</a>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Appliances</a></li>
+                <li><a href="#">LED TVs</a></li>
+                <li><a href="#">Projectors</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Smart Watch</a></li>
+                <li><a href="#">Cameras</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+            <h4>Customer Service</h4>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="footer-col newsletter">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get updates about latest deals and offers.</p>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>© 2026 BdMall. All Rights Reserved.</p>
+        <div class="payment-icons">
+            💳 🏦 🅿️ 🪙
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
